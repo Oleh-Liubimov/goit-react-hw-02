@@ -13,7 +13,7 @@ function App() {
   });
     useEffect(() => {
       localStorage.setItem("saved-feedback", JSON.stringify(feedback))
-    },)
+    }, [feedback])
     const updateFeedback = (feedbackType) => {
       setFeedback((prevFeedback) => ({
         ...feedback,
