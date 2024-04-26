@@ -16,7 +16,7 @@ function App() {
     }, [feedback])
     const updateFeedback = (feedbackType) => {
       setFeedback((prevFeedback) => ({
-        ...feedback,
+        ...prevFeedback,
         [feedbackType]: prevFeedback[feedbackType] + 1
       })
       )
